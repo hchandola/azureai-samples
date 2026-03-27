@@ -12,8 +12,10 @@ This repository contains a collection of Jupyter notebooks demonstrating various
 | [Enhancing GPT-4 Turbo with Vision with Grounding Techniques](enhancement_grounding/enhancement_grounding_chatcompletions_example_restapi.ipynb) | Applying grounding techniques to image inputs in GPT-4 Turbo with Vision. | Image |
 | [Enhancing GPT-4 Turbo with Vision with OCR Technique](enhancement_OCR/enhancement_OCR_chatcompletions_example_restapi.ipynb) | Incorporating Optical Character Recognition (OCR) with image inputs in GPT-4 Turbo with Vision. | Image |
 | [Enhancing GPT-4 Turbo with Vision with Face Attributes](face/face_chatcompletions_example_restapi.ipynb) | Utilize face attributes obtained from the face API to assess face image quality in GPT-4 Turbo with Vision. | Image |
-| [Basic Video QnA in GPT-4 Turbo with Vision](video/video_chatcompletions_example_restapi.ipynb) | Conducting Q&A with video inputs in GPT-4 Turbo with Vision. | Video |
-| [Video Chunk Processing Sequentially in GPT-4 Turbo with Vision](video_chunk/video_chunk_chatcompletions_example_restapi.ipynb) | Sequential processing of video chunks in GPT-4 Turbo with Vision. | Video |
+| [Basic Video QnA in GPT-4 Turbo with Vision based on video index](video/video_chatcompletions_example_restapi.ipynb) | Conducting Q&A with video inputs (indexed) in GPT-4 Turbo with Vision. | Video |
+| [Basic Video QnA in GPT-4 Turbo with Vision by manual sampling](video_by_manual_sampling/video_chatcompletions_example_restapi.ipynb) | Conducting Q&A with video inputs by manually sampling frames in GPT-4 Turbo with Vision. | Video |
+| [Video Chunk Processing Sequentially in GPT-4 Turbo with Vision based on video index](video_chunk/video_chunk_chatcompletions_example_restapi.ipynb) | Sequential processing of video chunks (indexed) in GPT-4 Turbo with Vision. | Video |
+| [Video Chunk Processing Sequentially in GPT-4 Turbo with Vision by manual sampling](video_chunk_by_manual_sampling/video_chunk_chatcompletions_example_restapi.ipynb) | Sequential processing of video chunks by manually sampling frames in GPT-4 Turbo with Vision. | Video |
 
 
 ## Installation
@@ -48,16 +50,16 @@ One can get the OPENAI_API_KEY, VISION_API_KEY, AZURE_SEARCH_QUERY_KEY, and FACE
  <br>
       
       WINDOWS Users: 
-         setx OPENAI_API_KEY "REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         setx VISION_API_KEY "REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         setx AZURE_SEARCH_QUERY_KEY "REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         setx FACE_API_KEY "REPLACE_WITH_YOUR_KEY_VALUE_HERE"
+         setx OPENAI_API_KEY ""
+         setx VISION_API_KEY ""
+         setx AZURE_SEARCH_QUERY_KEY ""
+         setx FACE_API_KEY ""
 
       MACOS/LINUX Users: 
-         export OPENAI_API_KEY="REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         export VISION_API_KEY="REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         export AZURE_SEARCH_QUERY_KEY="REPLACE_WITH_YOUR_KEY_VALUE_HERE"
-         export FACE_API_KEY="REPLACE_WITH_YOUR_KEY_VALUE_HERE"
+         export OPENAI_API_KEY=""
+         export VISION_API_KEY=""
+         export AZURE_SEARCH_QUERY_KEY=""
+         export FACE_API_KEY=""
 
 - To find your "OPENAI_API_BASE", "VISION_API_ENDPOINT", "AZURE_SEARCH_SERVICE_ENDPOINT", and "FACE_API_ENDPOINT",  go to https://portal.azure.com, find your resource and then under "Resource Management" -> "Keys and Endpoints" look for the "Endpoint" value.
 
